@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <v-app>
-      <v-app-bar app flat>
-        <v-toolbar-title class="text-h4 font-weight-bold">{{
-          activeMenuItem.text
-        }}</v-toolbar-title>
+      <v-app-bar app flat color="blue lighten-5">
+        <v-toolbar-title
+          class="text-h4 font-weight-bold blue--text text--darken-4"
+          >{{ activeMenuItem.text }}</v-toolbar-title
+        >
         <v-spacer></v-spacer>
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
@@ -12,6 +13,7 @@
               icon
               v-bind="attrs"
               v-on="on"
+              color="blue darken-4"
               @click="externalLink(externalLinks.facebook)"
             >
               <v-icon>mdi-facebook</v-icon>
@@ -25,6 +27,7 @@
               icon
               v-bind="attrs"
               v-on="on"
+              color="blue darken-4"
               @click="externalLink(externalLinks.email)"
             >
               <v-icon>mdi-email</v-icon>
@@ -38,6 +41,7 @@
               icon
               v-bind="attrs"
               v-on="on"
+              color="blue darken-4"
               @click="externalLink(externalLinks.telephone)"
             >
               <v-icon>mdi-phone</v-icon>
@@ -51,6 +55,7 @@
               icon
               v-bind="attrs"
               v-on="on"
+              color="blue darken-4"
               @click="externalLink(externalLinks.map)"
             >
               <v-icon>mdi-google-maps</v-icon>
@@ -61,16 +66,20 @@
       </v-app-bar>
 
       <v-navigation-drawer app permanent elevation="0">
-        <v-list dense>
+        <v-list dense color="blue lighten-5">
           <v-list-item class="px-2">
             <v-img src="./assets/logo_transp_sm.png"></v-img>
           </v-list-item>
           <v-list-item link class="text-center">
             <v-list-item-content>
               <v-list-item-title class="text-h6">
-                New Bradwell
+                <span class="blue--text text--darken-4">New Bradwell</span>
               </v-list-item-title>
-              <v-list-item-subtitle>Parish Council</v-list-item-subtitle>
+              <v-list-item-subtitle
+                ><span class="indigo--text text--darken-4"
+                  >Parish Council</span
+                ></v-list-item-subtitle
+              >
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -99,12 +108,15 @@
         </v-container>
       </v-main>
 
-      <v-footer app>
+      <v-footer app color="blue lighten-5">
         <span class="text-caption"
           ><span class="font-weight-bold"
             >Copyright 2018-2021 New Bradwell Parish Council</span
           ><br />Unit 10, New Bradwell Workspace, St James Street, New Bradwell,
-          Milton Keynes, MK13 0BL</span
+          Milton Keynes, MK13 0BL<br />01908 313602 -
+          <a href="mailto:contact@newbradwell-pc.gov.uk"
+            >contact@newbradwell-pc.gov.uk</a
+          ></span
         >
       </v-footer>
     </v-app>
@@ -130,21 +142,9 @@ export default {
           routeTarget: 'path'
         },
         {
-          text: 'News Feed',
+          text: 'News and Events',
           icon: 'mdi-newspaper',
           route: 'feed',
-          routeTarget: 'name'
-        },
-        {
-          text: 'Councillors',
-          icon: 'mdi-shield-account',
-          route: 'councillors',
-          routeTarget: 'name'
-        },
-        {
-          text: 'Staff',
-          icon: 'mdi-badge-account',
-          route: 'staff',
           routeTarget: 'name'
         },
         {
@@ -160,6 +160,12 @@ export default {
           routeTarget: 'name'
         },
         {
+          text: 'Newsletters',
+          icon: 'mdi-email-newsletter',
+          route: 'newsletters',
+          routeTarget: 'name'
+        },
+        {
           text: 'Allotments',
           icon: 'mdi-flower',
           route: 'allotments',
@@ -172,9 +178,15 @@ export default {
           routeTarget: 'name'
         },
         {
-          text: 'Careers',
-          icon: 'mdi-handshake',
-          route: 'careers',
+          text: 'Councillors',
+          icon: 'mdi-shield-account',
+          route: 'councillors',
+          routeTarget: 'name'
+        },
+        {
+          text: 'Staff',
+          icon: 'mdi-badge-account',
+          route: 'staff',
           routeTarget: 'name'
         }
       ]
@@ -210,7 +222,20 @@ export default {
     externalLink (href, target = '_blank') {
       console.debug(`externalLink: ${href} (${target})`)
       window.open(href, target).focus()
+    },
+    checkIncomingRoute () {
+      if (this.$route.name === null && this.$route.path !== '/') {
+        console.debug(
+          `checkIncomingRoute: unknown route (${this.$route.path}), pushing to about`
+        )
+        this.$router.push({
+          path: 'about'
+        })
+      }
     }
+  },
+  created () {
+    this.checkIncomingRoute()
   }
 }
 </script>

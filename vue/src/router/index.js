@@ -12,7 +12,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/news-feed',
+    path: '/news-events',
     name: 'feed',
     component: () => import(/* webpackChunkName: "feed" */ '../views/Feed.vue')
   },
@@ -41,6 +41,12 @@ const routes = [
       import(/* webpackChunkName: "policies" */ '../views/Policies.vue')
   },
   {
+    path: '/newsletters',
+    name: 'newsletters',
+    component: () =>
+      import(/* webpackChunkName: "newsletters" */ '../views/Newsletters.vue')
+  },
+  {
     path: '/allotments',
     name: 'allotments',
     component: () =>
@@ -51,12 +57,6 @@ const routes = [
     name: 'coronavirus',
     component: () =>
       import(/* webpackChunkName: "coronavirus" */ '../views/Coronavirus.vue')
-  },
-  {
-    path: '/careers',
-    name: 'careers',
-    component: () =>
-      import(/* webpackChunkName: "careers" */ '../views/Careers.vue')
   }
 ]
 
