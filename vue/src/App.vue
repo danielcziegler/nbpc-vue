@@ -2,8 +2,7 @@
   <div id="app">
     <v-app>
       <v-app-bar app flat>
-        <v-toolbar-title class="font-weight-bold"
-          >New Bradwell Parish Council</v-toolbar-title
+        <v-toolbar-title>New Bradwell Parish Council</v-toolbar-title
         >
         <v-spacer></v-spacer>
         <v-btn icon>
