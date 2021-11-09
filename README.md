@@ -1,1 +1,1 @@
-[![CircleCI](https://circleci.com/gh/danielcziegler/nbpc-vue/tree/main.svg?style=svg&circle-token=aee51c24932e816ca195ebc27a2335520f2158b5)](https://circleci.com/gh/danielcziegler/nbpc-vue/tree/main)
+[![CircleCI](https://circleci.com/gh/danielcziegler/nbpc-vue/tree/main.svg?style=svg&circle-token=53fba7c6b40b14e2a6453988a14d5db2833f9bcf)](https://circleci.com/gh/danielcziegler/nbpc-vue/tree/main)
