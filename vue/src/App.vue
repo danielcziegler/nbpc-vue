@@ -136,7 +136,7 @@ export default {
       externalLinks: {
         facebook: 'https://www.facebook.com/newbradwellparishcouncil',
         email: 'mailto:contact@newbradwell-pc.gov.uk',
-        telephone: '01908 313602',
+        telephone: 'tel:01908313602',
         map: 'https://www.google.com/maps/place/New+Bradwell+Parish+Council/@52.064658,-0.792417,16z/data=!4m5!3m4!1s0x0:0xa350b42125ccc0e1!8m2!3d52.064511!4d-0.7928642?hl=en-GB'
       },
       menuItems: [
