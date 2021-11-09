@@ -7,7 +7,10 @@
         class="white--text align-end"
       >
         <v-card-title>
-          <div class="text-h4 font-weight-bold textstrokeblack">
+          <div
+            class="text-h4 font-weight-bold textstrokeblack"
+            style="word-break: break-word"
+          >
             Welcome to the New Bradwell Parish Council Webpage
           </div>
           <div
@@ -24,7 +27,7 @@
       </v-img>
     </v-card>
     <v-row>
-      <v-col cols="7">
+      <v-col cols="12" sm="12" md="7" lg="7" xl="7">
         <v-card outlined elevation="0">
           <v-card-title primary-title> Address and Opening Hours </v-card-title>
           <v-card-text>
@@ -69,7 +72,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="5">
+      <v-col cols="12" sm="12" md="5" lg="5" xl="5">
         <v-card outlined elevation="0">
           <v-card-title primary-title>
             Role of the Parish Council

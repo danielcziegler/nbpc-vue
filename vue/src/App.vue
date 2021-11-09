@@ -65,7 +65,12 @@
         </v-tooltip>
       </v-app-bar>
 
-      <v-navigation-drawer app permanent elevation="0">
+      <v-navigation-drawer
+        app
+        permanent
+        elevation="0"
+        :expand-on-hover="smallDevice"
+      >
         <v-list dense color="blue lighten-5">
           <v-list-item class="px-2">
             <v-img src="./assets/logo_transp_sm.png"></v-img>
@@ -193,6 +198,21 @@ export default {
     }
   },
   computed: {
+    smallDevice: function () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs':
+          return true
+        case 'sm':
+          return true
+        case 'md':
+          return false
+        case 'lg':
+          return false
+        case 'xl':
+          return false
+      }
+      return false
+    },
     activeMenuItem: function () {
       if (this.$route.name === null) {
         return this.menuItems[0]

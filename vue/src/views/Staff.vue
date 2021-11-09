@@ -1,7 +1,15 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="4" v-for="(person, i) in peopleList" :key="'concillor' + i">
+      <v-col
+        cols="12"
+        sm="12"
+        md="4"
+        lg="4"
+        xl="4"
+        v-for="(person, i) in peopleList"
+        :key="'concillor' + i"
+      >
         <v-card outlined height="100%">
           <v-card-text class="text-center">
             <div>
