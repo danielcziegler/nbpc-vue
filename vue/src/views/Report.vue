@@ -2,7 +2,11 @@
   <div>
     <v-row>
       <v-col
-        cols="6"
+        cols="12"
+        sm="12"
+        md="6"
+        lg="6"
+        xl="6"
         v-for="(issue, i) in reportItemsSorted"
         :key="'issue' + i"
       >
