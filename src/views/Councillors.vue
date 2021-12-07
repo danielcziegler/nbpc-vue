@@ -49,6 +49,10 @@ export default {
         {
           name: 'Fern Bunton',
           role: 'Parish Councillor'
+        },
+        {
+          name: 'Simon Clawson',
+          role: 'Parish Councillor'
         }
       ]
     }
