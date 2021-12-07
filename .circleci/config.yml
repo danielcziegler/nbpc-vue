@@ -13,7 +13,7 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - node/test:
-          app-dir: ~/project/vue
+          # app-dir: ~/project/vue
           run-command: test:unit
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
