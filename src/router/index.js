@@ -1,67 +1,75 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    alias: ['/about'],
-    name: 'about',
+    path: "/",
+    alias: ["/about"],
+    name: "about",
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/About.vue')
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: '/news-events',
-    name: 'feed',
-    component: () => import(/* webpackChunkName: "feed" */ '../views/Feed.vue')
+    path: "/news-events",
+    name: "feed",
+    component: () => import(/* webpackChunkName: "feed" */ "../views/Feed.vue"),
   },
   {
-    path: '/councillors',
-    name: 'councillors',
+    path: "/councillors",
+    name: "councillors",
     component: () =>
-      import(/* webpackChunkName: "councillors" */ '../views/Councillors.vue')
+      import(/* webpackChunkName: "councillors" */ "../views/Councillors.vue"),
   },
   {
-    path: '/staff',
-    name: 'staff',
+    path: "/staff",
+    name: "staff",
     component: () =>
-      import(/* webpackChunkName: "staff" */ '../views/Staff.vue')
+      import(/* webpackChunkName: "staff" */ "../views/Staff.vue"),
   },
   {
-    path: '/report-an-issue',
-    name: 'report',
+    path: "/report-an-issue",
+    name: "report",
     component: () =>
-      import(/* webpackChunkName: "report" */ '../views/Report.vue')
+      import(/* webpackChunkName: "report" */ "../views/Report.vue"),
   },
   {
-    path: '/policies-guides-docs',
-    name: 'policies',
+    path: "/policies-guides-docs",
+    name: "policies",
     component: () =>
-      import(/* webpackChunkName: "policies" */ '../views/Policies.vue')
+      import(/* webpackChunkName: "policies" */ "../views/Policies.vue"),
   },
   {
-    path: '/newsletters',
-    name: 'newsletters',
+    path: "/newsletters",
+    name: "newsletters",
     component: () =>
-      import(/* webpackChunkName: "newsletters" */ '../views/Newsletters.vue')
+      import(/* webpackChunkName: "newsletters" */ "../views/Newsletters.vue"),
   },
   {
-    path: '/allotments',
-    name: 'allotments',
+    path: "/allotments",
+    name: "allotments",
     component: () =>
-      import(/* webpackChunkName: "allotments" */ '../views/Allotments.vue')
+      import(/* webpackChunkName: "allotments" */ "../views/Allotments.vue"),
   },
   {
-    path: '/coronavirus',
-    name: 'coronavirus',
+    path: "/coronavirus",
+    name: "coronavirus",
     component: () =>
-      import(/* webpackChunkName: "coronavirus" */ '../views/Coronavirus.vue')
-  }
-]
+      import(/* webpackChunkName: "coronavirus" */ "../views/Coronavirus.vue"),
+  },
+  {
+    path: "/platinum-jubilee",
+    name: "platinumjubilee",
+    component: () =>
+      import(
+        /* webpackChunkName: "coronavirus" */ "../views/PlatinumJubilee.vue"
+      ),
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

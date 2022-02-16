@@ -26,36 +26,36 @@
 
 <script>
 export default {
-  name: 'Councillors',
-  data () {
+  name: "Councillors",
+  data() {
     return {
       peopleList: [
         {
-          name: 'Joshua Ziegler',
-          role: 'Chair'
+          name: "Joshua Ziegler",
+          role: "Chair",
         },
         {
-          name: 'Tina Strutton',
-          role: 'Vice-Chair'
+          name: "Tina Strutton",
+          role: "Vice-Chair",
         },
         {
-          name: 'Alan Francis',
-          role: 'Parish Councillor'
+          name: "Alan Francis",
+          role: "Parish Councillor",
         },
         {
-          name: 'Daniel Ziegler',
-          role: 'Parish Councillor'
+          name: "Daniel Ziegler",
+          role: "Parish Councillor",
         },
         {
-          name: 'Fern Bunton',
-          role: 'Parish Councillor'
+          name: "Fern Bunton",
+          role: "Parish Councillor",
         },
         {
-          name: 'Simon Clawson',
-          role: 'Parish Councillor'
-        }
-      ]
-    }
-  }
-}
+          name: "Simon Clawson",
+          role: "Parish Councillor",
+        },
+      ],
+    };
+  },
+};
 </script>

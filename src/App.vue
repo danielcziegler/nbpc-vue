@@ -130,134 +130,140 @@
 
 <script>
 export default {
-  name: 'App',
-  data () {
+  name: "App",
+  data() {
     return {
       externalLinks: {
-        facebook: 'https://www.facebook.com/newbradwellparishcouncil',
-        email: 'mailto:contact@newbradwell-pc.gov.uk',
-        telephone: 'tel:01908313602',
-        map: 'https://www.google.com/maps/place/New+Bradwell+Parish+Council/@52.064658,-0.792417,16z/data=!4m5!3m4!1s0x0:0xa350b42125ccc0e1!8m2!3d52.064511!4d-0.7928642?hl=en-GB'
+        facebook: "https://www.facebook.com/newbradwellparishcouncil",
+        email: "mailto:contact@newbradwell-pc.gov.uk",
+        telephone: "tel:01908313602",
+        map: "https://www.google.com/maps/place/New+Bradwell+Parish+Council/@52.064658,-0.792417,16z/data=!4m5!3m4!1s0x0:0xa350b42125ccc0e1!8m2!3d52.064511!4d-0.7928642?hl=en-GB",
       },
       menuItems: [
         {
-          text: 'About Us',
-          icon: 'mdi-information',
-          route: 'about',
-          routeTarget: 'path'
+          text: "About Us",
+          icon: "mdi-information",
+          route: "about",
+          routeTarget: "path",
         },
         {
-          text: 'News and Events',
-          icon: 'mdi-newspaper',
-          route: 'feed',
-          routeTarget: 'name'
+          text: "News and Events",
+          icon: "mdi-newspaper",
+          route: "feed",
+          routeTarget: "name",
         },
         {
-          text: 'Report an Issue',
-          icon: 'mdi-alert',
-          route: 'report',
-          routeTarget: 'name'
+          text: "Report an Issue",
+          icon: "mdi-alert",
+          route: "report",
+          routeTarget: "name",
         },
         {
-          text: 'Policies, Guides and Docs',
-          icon: 'mdi-folder-text',
-          route: 'policies',
-          routeTarget: 'name'
+          text: "Policies, Guides and Docs",
+          icon: "mdi-folder-text",
+          route: "policies",
+          routeTarget: "name",
         },
         {
-          text: 'Newsletters',
-          icon: 'mdi-email-newsletter',
-          route: 'newsletters',
-          routeTarget: 'name'
+          text: "Newsletters",
+          icon: "mdi-email-newsletter",
+          route: "newsletters",
+          routeTarget: "name",
         },
         {
-          text: 'Allotments',
-          icon: 'mdi-flower',
-          route: 'allotments',
-          routeTarget: 'name'
+          text: "Allotments",
+          icon: "mdi-flower",
+          route: "allotments",
+          routeTarget: "name",
         },
         {
-          text: 'Coronavirus',
-          icon: 'mdi-virus',
-          route: 'coronavirus',
-          routeTarget: 'name'
+          text: "Coronavirus",
+          icon: "mdi-virus",
+          route: "coronavirus",
+          routeTarget: "name",
         },
         {
-          text: 'Councillors',
-          icon: 'mdi-shield-account',
-          route: 'councillors',
-          routeTarget: 'name'
+          text: "Platinum Jubilee",
+          icon: "mdi-party-popper",
+          route: "platinumjubilee",
+          routeTarget: "name",
         },
         {
-          text: 'Staff',
-          icon: 'mdi-badge-account',
-          route: 'staff',
-          routeTarget: 'name'
-        }
-      ]
-    }
+          text: "Councillors",
+          icon: "mdi-shield-account",
+          route: "councillors",
+          routeTarget: "name",
+        },
+        {
+          text: "Staff",
+          icon: "mdi-badge-account",
+          route: "staff",
+          routeTarget: "name",
+        },
+      ],
+    };
   },
   computed: {
     smallDevice: function () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return true
-        case 'sm':
-          return true
-        case 'md':
-          return false
-        case 'lg':
-          return false
-        case 'xl':
-          return false
+        case "xs":
+          return true;
+        case "sm":
+          return true;
+        case "md":
+          return false;
+        case "lg":
+          return false;
+        case "xl":
+          return false;
       }
-      return false
+      return false;
     },
     activeMenuItem: function () {
       if (this.$route.name === null) {
-        return this.menuItems[0]
+        return this.menuItems[0];
       }
       const item = this.menuItems.filter(
         (dat) => dat.route === this.$route.name
-      )
+      );
       if (item.length !== 1) {
-        return this.menuItems[0]
+        return this.menuItems[0];
       }
-      return item[0]
+      return item[0];
     },
     menuItemsClasses: function () {
-      const out = {}
-      let item
+      const out = {};
+      let item;
       for (item of this.menuItems) {
         if (this.activeMenuItem.route === item.route) {
-          out[item.route] = 'v-list-item--active'
+          out[item.route] = "v-list-item--active";
         } else {
-          out[item.route] = ''
+          out[item.route] = "";
         }
       }
-      return out
-    }
+      return out;
+    },
   },
   methods: {
-    externalLink (href, target = '_blank') {
-      console.debug(`externalLink: ${href} (${target})`)
-      window.open(href, target).focus()
+    externalLink(href, target = "_blank") {
+      console.debug(`externalLink: ${href} (${target})`);
+      window.open(href, target).focus();
     },
-    checkIncomingRoute () {
-      if (this.$route.name === null && this.$route.path !== '/') {
+    checkIncomingRoute() {
+      if (this.$route.name === null && this.$route.path !== "/") {
         console.debug(
           `checkIncomingRoute: unknown route (${this.$route.path}), pushing to about`
-        )
+        );
         this.$router.push({
-          path: 'about'
-        })
+          path: "about",
+        });
       }
-    }
+    },
   },
-  created () {
-    this.checkIncomingRoute()
-  }
-}
+  created() {
+    this.checkIncomingRoute();
+  },
+};
 </script>
 
 <style></style>

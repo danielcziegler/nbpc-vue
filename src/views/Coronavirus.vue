@@ -85,6 +85,6 @@
 
 <script>
 export default {
-  name: 'Coronavirus'
-}
+  name: "Coronavirus",
+};
 </script>

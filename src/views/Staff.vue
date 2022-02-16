@@ -31,34 +31,34 @@
 
 <script>
 export default {
-  name: 'Staff',
-  data () {
+  name: "Staff",
+  data() {
     return {
       peopleList: [
         {
-          name: 'Germaine Newnham',
-          role: 'Parish Clerk',
+          name: "Germaine Newnham",
+          role: "Parish Clerk",
           role_desc: null,
-          email: 'clerk@newbradwell-pc.gov.uk',
-          telephone: '01909 313602'
+          email: "clerk@newbradwell-pc.gov.uk",
+          telephone: "01909 313602",
         },
         {
-          name: 'Kaysha Lake',
-          role: 'Office Assistant / RFO',
+          name: "Kaysha Lake",
+          role: "Office Assistant / RFO",
           role_desc: null,
-          email: 'office@newbradwell-pc.gov.uk',
-          telephone: '01909 313602'
+          email: "office@newbradwell-pc.gov.uk",
+          telephone: "01909 313602",
         },
         {
-          name: 'David Barnes',
-          role: 'Environmental Officer',
+          name: "David Barnes",
+          role: "Environmental Officer",
           role_desc:
-            'Our Environmental Officer periodically patrols around New Bradwell, looking for any environment issues like fly tipping, issues with waste and recycling, dog litter etc. Please get in touch if you see any concerns.',
-          email: 'envofficer@newbradwell-pc.gov.uk',
-          telephone: '07909 520793'
-        }
-      ]
-    }
-  }
-}
+            "Our Environmental Officer periodically patrols around New Bradwell, looking for any environment issues like fly tipping, issues with waste and recycling, dog litter etc. Please get in touch if you see any concerns.",
+          email: "envofficer@newbradwell-pc.gov.uk",
+          telephone: "07909 520793",
+        },
+      ],
+    };
+  },
+};
 </script>
