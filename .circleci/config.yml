@@ -13,11 +13,11 @@ workflows:
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-  build:
-    jobs:
-      - node/run: 
-          npm-run: build
-  deploy:
-    jobs:
-      - node/run:
-          npm-run: ftp-deploy
+  # build:
+  #   jobs:
+  #     - node/run: 
+  #         npm-run: build
+  # deploy:
+  #   jobs:
+  #     - node/run:
+  #         npm-run: ftp-deploy
