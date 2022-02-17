@@ -116,7 +116,7 @@
       <v-footer app color="blue lighten-5">
         <span class="text-caption"
           ><span class="font-weight-bold"
-            >Copyright 2018-2021 New Bradwell Parish Council</span
+            >Copyright 2018-2022 New Bradwell Parish Council</span
           ><br />Unit 10, New Bradwell Workspace, St James Street, New Bradwell,
           Milton Keynes, MK13 0BL<br />01908 313602 -
           <a href="mailto:contact@newbradwell-pc.gov.uk"
