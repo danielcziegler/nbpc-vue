@@ -20,4 +20,4 @@ workflows:
   deploy:
     jobs:
       - node/run:
-          npm-run: deploy
+          npm-run: ftp-deploy
