@@ -56,9 +56,15 @@ export default {
           target: "_blank",
         },
         {
-          title: "Milton Keynes Council info",
+          title: "Milton Keynes Council Info",
           desc: "Milton Keynes Council has plenty of information and resources for planning your event. Click here to go to their webpage.",
           href: "https://www.milton-keynes.gov.uk/your-council-and-elections/queens-platinum-jubilee",
+          target: "_blank",
+        },
+        {
+          title: "Milton Keynes Council FAQ",
+          desc: "Milton Keynes Council also has an FAQ available that answers lots of questions. Take a look by clicking here.",
+          href: "/docs/jubilee-event-planning-2022.pdf",
           target: "_blank",
         },
         {
