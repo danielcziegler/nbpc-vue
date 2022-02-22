@@ -51,8 +51,8 @@ export default {
       links: [
         {
           title: "New Bradwell Parish Council Grant Form (Online)",
-          desc: "Complete our Grants Application form and your request will be reviewed by the Parish Council. If you need assistance completing the form, please contact our team.",
-          href: "https://forms.office.com/Pages/ResponsePage.aspx?id=uoh7Kkbp8EueurjT0B43iCN69r2iEq1Ho-QzlAVcsV5URDZIOFBCMzNLV0xZVDdQUks4VTBMQUJSOS4u&fsw=0",
+          desc: "Complete our Jubilee Grants Application form and your request will be reviewed by the Parish Council. If you need assistance completing the form, please contact our team.",
+          href: "https://forms.office.com/Pages/ResponsePage.aspx?id=uoh7Kkbp8EueurjT0B43iCGKPx4U3itMuWPieog0g65UOE9HMFpHVk84VjhLUTEyTUhJUEwxQTFNSi4u",
           target: "_blank",
         },
         {
