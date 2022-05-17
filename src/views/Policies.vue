@@ -40,6 +40,11 @@ export default {
           link: "https://newbradwellpc-my.sharepoint.com/:f:/g/personal/dziegler_newbradwell-pc_gov_uk/EsddybRU9wBJme4X1HA8ykoBj2aSkxWVAFXgIqDDMv5ZtA?e=j9ZoV3",
         },
         {
+          title: "Parish Council Meeting dates 2022",
+          desc: "This contains all the agreed Parish Council meeting dates for 2022.",
+          link: "/docs/meeting-dates-2022.pdf",
+        },
+        {
           title: "Grants Policy and Guidance",
           desc: "This document contains our most recent Grants policy, and offers guidance for what would and would not be considered.",
           link: "/docs/grants-sep19.pdf",
