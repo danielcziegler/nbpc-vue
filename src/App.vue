@@ -176,12 +176,12 @@ export default {
           route: "allotments",
           routeTarget: "name",
         },
-        {
-          text: "Coronavirus",
-          icon: "mdi-virus",
-          route: "coronavirus",
-          routeTarget: "name",
-        },
+        // {
+        //   text: "Coronavirus",
+        //   icon: "mdi-virus",
+        //   route: "coronavirus",
+        //   routeTarget: "name",
+        // },
         {
           text: "Platinum Jubilee",
           icon: "mdi-party-popper",

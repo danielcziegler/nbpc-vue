@@ -51,11 +51,11 @@
                   <a href="mailto:contact@newbradwell-pc.gov.uk" target="_blank"
                     >contact@newbradwell-pc.gov.uk</a
                   ><br /><br />
-                  Mon: Closed<br />
+                  Mon: 10AM - 1PM<br />
                   Tue: 10AM - 1PM<br />
                   Wed: 10AM - 1PM<br />
-                  Thu: Closed<br />
-                  Fri: Closed
+                  Thu: 10AM - 1PM<br />
+                  Fri: 10AM - 1PM
                 </p>
               </v-col>
             </v-row>

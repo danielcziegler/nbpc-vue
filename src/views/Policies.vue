@@ -89,6 +89,11 @@ export default {
           desc: "You can find all the information about the Waste Collection Pilot here from MKC.",
           link: "https://www.milton-keynes.gov.uk/waste-recycling/recycling-pilot",
         },
+        {
+          title: "Website Accessibility Statement",
+          desc: "Our statement on our website's accessibility.",
+          link: "/docs/web-accessibility-statement.pdf",
+        },
       ],
     };
   },
