@@ -94,6 +94,41 @@ export default {
           desc: "Our statement on our website's accessibility.",
           link: "/docs/web-accessibility-statement.pdf",
         },
+        {
+          title: "Complaints Procedure",
+          desc: "Our policy for dealing with complaints about NBPC administration or procedures.",
+          link: "/docs/complaints-procedure.pdf",
+        },
+        {
+          title: "Data Protection Policy",
+          desc: "Policy providing guidance on how we proect Personal Data.",
+          link: "/docs/data-protection-policy.pdf",
+        },
+        {
+          title: "Equality & Diversity Policy",
+          desc: "Our policy on Equality and Diversity.",
+          link: "/docs/equality-diversity-policy.pdf",
+        },
+        {
+          title: "Staff Grievance Policy",
+          desc: "Our policy on handling Staff Grievances.",
+          link: "/docs/staff-grievance-policy.pdf",
+        },
+        {
+          title: "Freedom of Information Policy",
+          desc: "Policy describing our approach to Freedom of Information.",
+          link: "/docs/freedom-information-policy.pdf",
+        },
+        {
+          title: "Model Publication Scheme Policy",
+          desc: "This guidance gives examples of the kinds of information that we provide in order to meet their commitments under the model publication scheme.",
+          link: "/docs/model-publication-scheme-policy.pdf",
+        },
+        {
+          title: "Staff Disciplinary Policy",
+          desc: "Policy that describes how NBPC would handle internal disciplinary issues.",
+          link: "/docs/staff-disciplinary-policy.pdf",
+        },
       ],
     };
   },
