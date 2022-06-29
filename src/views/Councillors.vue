@@ -55,11 +55,11 @@ export default {
           role: "Parish Councillor",
           interests: "/docs/councillor-interests/dziegler.pdf",
         },
-        {
-          name: "Fern Bunton",
-          role: "Parish Councillor",
-          interests: "/docs/councillor-interests/fbunton.pdf",
-        },
+        // {
+        //   name: "Fern Bunton",
+        //   role: "Parish Councillor",
+        //   interests: "/docs/councillor-interests/fbunton.pdf",
+        // },
         {
           name: "Simon Clawson",
           role: "Parish Councillor",

@@ -182,12 +182,12 @@ export default {
         //   route: "coronavirus",
         //   routeTarget: "name",
         // },
-        {
-          text: "Platinum Jubilee",
-          icon: "mdi-party-popper",
-          route: "platinumjubilee",
-          routeTarget: "name",
-        },
+        // {
+        //   text: "Platinum Jubilee",
+        //   icon: "mdi-party-popper",
+        //   route: "platinumjubilee",
+        //   routeTarget: "name",
+        // },
         {
           text: "Councillors",
           icon: "mdi-shield-account",
