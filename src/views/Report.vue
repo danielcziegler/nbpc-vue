@@ -37,27 +37,27 @@ export default {
         {
           title: "Shrubs, Flower Begs and Grass Cutting",
           desc: "Let MK Council know if any of our shrubs, flower beds or grass areas are in need of attention.",
-          link: "https://www.milton-keynes.gov.uk/leisure-tourism-and-culture/parks-and-open-spaces/landscape-maintenance/private-trees-shrubs-overhanging-the-highway",
+          link: "https://www.milton-keynes.gov.uk/environment-parks-and-open-spaces/landscape-maintenance",
         },
         {
           title: "Trees and Hedges",
           desc: "Please tell MK Council if there are any Trees or Hedges that require our attention.",
-          link: "https://www.milton-keynes.gov.uk/leisure-tourism-and-culture/parks-and-open-spaces/landscape-maintenance/private-trees-shrubs-overhanging-the-highway",
+          link: "https://www.milton-keynes.gov.uk/environment-parks-and-open-spaces/landscape-maintenance/trees",
         },
         {
           title: "Play Areas",
           desc: "Please report any incidents or damage to local play areas.",
-          link: "https://www.milton-keynes.gov.uk/leisure-tourism-and-culture/parks-and-open-spaces/play-areas",
+          link: "https://www.milton-keynes.gov.uk/environment-parks-and-open-spaces",
         },
         {
           title: "Street Lighting",
           desc: "Please report any street lights in need of repair.",
-          link: "https://www.milton-keynes.gov.uk/highways-and-transport-hub/highway-maintenance-hub/street-lighting",
+          link: "https://www.milton-keynes.gov.uk/highways/street-lighting-and-traffic-signals/street-lighting",
         },
         {
           title: "Highways and Parking",
           desc: "Find out who to report different types of issues to.",
-          link: "https://www.milton-keynes.gov.uk/highways-and-transport-hub/report-it-highways-and-transport/report-problems-on-roads-footways-and-redways",
+          link: "https://www.milton-keynes.gov.uk/highways",
         },
         {
           title: "Fly Tipping",
@@ -67,7 +67,7 @@ export default {
         {
           title: "Public Footway issues",
           desc: "Report any issues to MK Council.",
-          link: "https://www.milton-keynes.gov.uk/highways-and-transport-hub/report-it-highways-and-transport/report-problems-on-roads-footways-and-redways",
+          link: "https://www.milton-keynes.gov.uk/highways-and-transport-hub/report-issue-us/damage-road-footway-or-redway",
         },
         {
           title: "Planning Applications",
@@ -77,7 +77,7 @@ export default {
         {
           title: "Watercourses",
           desc: "See a problem with a stream or pond?",
-          link: "https://www.milton-keynes.gov.uk/leisure-tourism-and-culture/parks-and-open-spaces/landscape-maintenance/private-trees-shrubs-overhanging-the-highway",
+          link: "https://www.milton-keynes.gov.uk/planning-and-building/urban-design-and-landscape-architecture-udla/flood-and-water-management",
         },
         {
           title: "Environmental Officer",
