@@ -43,13 +43,6 @@ export default {
           telephone: "01909 313602",
         },
         {
-          name: "Kaysha Lake",
-          role: "Office Assistant / RFO",
-          role_desc: null,
-          email: "office@newbradwell-pc.gov.uk",
-          telephone: "01909 313602",
-        },
-        {
           name: "David Barnes",
           role: "Environmental Officer",
           role_desc:

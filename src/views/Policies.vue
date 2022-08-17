@@ -239,6 +239,12 @@ export default {
           link: "/docs/modal-councillor-code-of-conduct.pdf",
           format: "PDF",
         },
+        {
+          title: "Powers of Local Councils",
+          desc: "Sets out the main functions and powers of local councils. It is only a summary and does not contain every single power or function.",
+          link: "/docs/powers-of-local-councils.pdf",
+          format: "PDF",
+        },
       ],
     };
   },

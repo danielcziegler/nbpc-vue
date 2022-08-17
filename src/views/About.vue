@@ -55,7 +55,7 @@
                   Tue: 10AM - 1PM<br />
                   Wed: 10AM - 1PM<br />
                   Thu: 10AM - 1PM<br />
-                  Fri: 10AM - 1PM
+                  Fri: Closed
                 </p>
               </v-col>
             </v-row>
@@ -153,9 +153,7 @@
               that affect the local community. Central Government is encouraging
               local councils to deliver more services and play a greater part in
               their communities. Parish and town councils have a variety of
-              <a
-                href="https://www.milton-keynes.gov.uk/assets/attach/58251/what_can_local_councils_do.pdf"
-                target="_blank"
+              <a href="/docs/powers-of-local-councils.pdf" target="_blank"
                 >powers and duties</a
               >
               given to them by Acts of Parliament. However not all parish and
