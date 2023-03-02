@@ -132,12 +132,6 @@ export default {
           format: "Form",
         },
         {
-          title: "2020-2021 Governance Statement",
-          desc: "See our Governance Statement for 2020 - 2021.",
-          link: "/docs/agar-2020-2021.pdf",
-          format: "PDF",
-        },
-        {
           title: "Asset Register",
           desc: "We have all our asset items listed and registered.",
           link: "/docs/assets.pdf",
@@ -216,12 +210,6 @@ export default {
           format: "PDF",
         },
         {
-          title: "AGAR Report 2021-2022",
-          desc: "View a snapshot of our AGAR report for 21-22.",
-          link: "/docs/agar-public-2021-2022.pdf",
-          format: "PDF",
-        },
-        {
           title: "Financial Risk Assesment (Feb '22)",
           desc: "View our Financial Risk Assesment from Feb 2022.",
           link: "/docs/financial-risk-assesment-22-02.pdf",
@@ -243,6 +231,30 @@ export default {
           title: "Powers of Local Councils",
           desc: "Sets out the main functions and powers of local councils. It is only a summary and does not contain every single power or function.",
           link: "/docs/powers-of-local-councils.pdf",
+          format: "PDF",
+        },
+        {
+          title: "21-22 AGAR (Section 1)",
+          desc: "See our Governance Statement for 2021 - 2022.",
+          link: "/docs/agar-21-22-section1.pdf",
+          format: "PDF",
+        },
+        {
+          title: "21-22 AGAR (Section 2)",
+          desc: "See our Governance Statement for 2021 - 2022 Accounting Statements.",
+          link: "/docs/agar-21-22-section2.pdf",
+          format: "PDF",
+        },
+        {
+          title: "21-22 AGAR (Section 3)",
+          desc: "See our Governance Statement for 2021 - 2022 External Auditor Report.",
+          link: "/docs/agar-21-22-section3.pdf",
+          format: "PDF",
+        },
+        {
+          title: "21-22 AGAR (Completion Notice)",
+          desc: "See our Governance Statement for 2021 - 2022 Completion Notice.",
+          link: "/docs/agar-21-22-completion.pdf",
           format: "PDF",
         },
       ],

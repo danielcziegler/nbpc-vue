@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-alert type="warning" dense>
+    <v-alert :color="colors.bannerColor" :class="colors.bannerText" dense>
       There are no Newsletters available in our archive yet.. please check back
       again soon!
     </v-alert>

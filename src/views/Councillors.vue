@@ -94,6 +94,16 @@ export default {
           interests: "/docs/councillor-interests/tstrutton.pdf",
         },
         {
+          name: "Janette Chapman",
+          role: "Parish Councillor",
+          interests: null,
+        },
+        {
+          name: "Nicola Coxon",
+          role: "Parish Councillor",
+          interests: "/docs/councillor-interests/ncoxon.pdf",
+        },
+        {
           name: "Simon Clawson",
           role: "Parish Councillor",
           interests: "/docs/councillor-interests/sclawson.pdf",

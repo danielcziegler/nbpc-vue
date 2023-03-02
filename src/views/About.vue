@@ -1,10 +1,37 @@
 <template>
   <div>
+    <v-row v-if="londonBridge">
+      <v-col>&nbsp;</v-col>
+      <v-col cols="6">
+        <v-card elevation="0" shaped outlined class="mb-5">
+          <v-img src="../assets/qe2.jpeg" :style="colors.logoStyle"></v-img>
+          <v-card-title>
+            <div
+              class="text-h4 font-weight-bold"
+              style="word-break: break-word"
+            >
+              Her Majesty The Queen
+            </div>
+            <div class="text-subtitle-1" style="word-break: break-word">
+              It has been announced by Buckingham Palace that Her Majesty The
+              Queen has passed away. The Parish Council and the people of New
+              Bradwell are deeply saddened to hear the news of the death.<br />
+              A book of condolence will be held at the Milton Keynes City
+              Council Civic offices from Friday 9 September.<br />Our sincere
+              condolences go to family members.
+            </div>
+          </v-card-title>
+        </v-card>
+      </v-col>
+      <v-col>&nbsp;</v-col>
+    </v-row>
+
     <v-card elevation="0" shaped class="mb-5">
       <v-img
         src="../assets/newbradwell_skyshot.jpg"
         height="300px"
         class="white--text align-end"
+        :style="colors.logoStyle"
       >
         <v-card-title>
           <div

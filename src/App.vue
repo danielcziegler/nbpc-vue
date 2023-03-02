@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <v-app>
-      <v-app-bar app flat color="blue lighten-5">
-        <v-toolbar-title
-          class="text-h4 font-weight-bold blue--text text--darken-4"
-          >{{ activeMenuItem.text }}</v-toolbar-title
-        >
+      <v-app-bar app flat :color="colors.appBar">
+        <v-toolbar-title :class="colors.appBarToolbarTitle">{{
+          activeMenuItem.text
+        }}</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
@@ -13,7 +12,7 @@
               icon
               v-bind="attrs"
               v-on="on"
-              color="blue darken-4"
+              :color="colors.appBarIcons"
               @click="externalLink(externalLinks.facebook)"
             >
               <v-icon>mdi-facebook</v-icon>
@@ -27,7 +26,7 @@
               icon
               v-bind="attrs"
               v-on="on"
-              color="blue darken-4"
+              :color="colors.appBarIcons"
               @click="externalLink(externalLinks.email)"
             >
               <v-icon>mdi-email</v-icon>
@@ -41,7 +40,7 @@
               icon
               v-bind="attrs"
               v-on="on"
-              color="blue darken-4"
+              :color="colors.appBarIcons"
               @click="externalLink(externalLinks.telephone)"
             >
               <v-icon>mdi-phone</v-icon>
@@ -55,7 +54,7 @@
               icon
               v-bind="attrs"
               v-on="on"
-              color="blue darken-4"
+              :color="colors.appBarIcons"
               @click="externalLink(externalLinks.map)"
             >
               <v-icon>mdi-google-maps</v-icon>
@@ -71,17 +70,20 @@
         elevation="0"
         :expand-on-hover="smallDevice"
       >
-        <v-list dense color="blue lighten-5">
+        <v-list dense :color="colors.logoBg">
           <v-list-item class="px-2">
-            <v-img src="./assets/logo_transp_sm.png"></v-img>
+            <v-img
+              src="./assets/logo_transp_sm.png"
+              :style="colors.logoStyle"
+            ></v-img>
           </v-list-item>
           <v-list-item link class="text-center">
             <v-list-item-content>
               <v-list-item-title class="text-h6">
-                <span class="blue--text text--darken-4">New Bradwell</span>
+                <span :class="colors.logoTextTop">New Bradwell</span>
               </v-list-item-title>
               <v-list-item-subtitle
-                ><span class="indigo--text text--darken-4"
+                ><span :class="colors.logoTextBottom"
                   >Parish Council</span
                 ></v-list-item-subtitle
               >
@@ -94,7 +96,7 @@
             v-for="(item, i) in menuItems"
             :key="i"
             link
-            :to="{ [item.routeTarget]: item.route }"
+            @click="performSideBarNav(item)"
             :class="menuItemsClasses[item.route]"
           >
             <v-list-item-icon>
@@ -113,13 +115,15 @@
         </v-container>
       </v-main>
 
-      <v-footer app color="blue lighten-5">
+      <v-footer app :color="colors.footer">
         <span class="text-caption"
           ><span class="font-weight-bold"
             >Copyright 2018-2022 New Bradwell Parish Council</span
           ><br />Unit 10, New Bradwell Workspace, St James Street, New Bradwell,
           Milton Keynes, MK13 0BL<br />01908 313602 -
-          <a href="mailto:contact@newbradwell-pc.gov.uk"
+          <a
+            :class="colors.footerLink"
+            href="mailto:contact@newbradwell-pc.gov.uk"
             >contact@newbradwell-pc.gov.uk</a
           ></span
         >
@@ -157,6 +161,12 @@ export default {
           icon: "mdi-alert",
           route: "report",
           routeTarget: "name",
+        },
+        {
+          text: "Agendas & Minutes",
+          icon: "mdi-file-document",
+          href: "https://newbradwellpc-my.sharepoint.com/:f:/g/personal/dziegler_newbradwell-pc_gov_uk/EsddybRU9wBJme4X1HA8ykoBj2aSkxWVAFXgIqDDMv5ZtA?e=j9ZoV3",
+          hrefTarget: "_blank",
         },
         {
           text: "Policies, Guides and Docs",
@@ -245,6 +255,12 @@ export default {
     },
   },
   methods: {
+    performSideBarNav(navItem) {
+      if ("href" in navItem) {
+        this.externalLink(navItem.href, navItem.hrefTarget);
+      }
+      this.$router.push((navItem.routeTarget = navItem.route));
+    },
     externalLink(href, target = "_blank") {
       console.debug(`externalLink: ${href} (${target})`);
       window.open(href, target).focus();

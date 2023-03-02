@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card shaped outlined elevation="0" class="mb-0 pb-0">
-      <v-alert type="warning" dense>
+      <v-alert :color="colors.bannerColor" :class="colors.bannerText" dense>
         Content provided from external internet sites are being provided as a
         convenience and for informational purposes only; they do not constitute
         an endorsement or an approval by the New Bradwell Parish Council. NBPC
