@@ -10,7 +10,7 @@
         for answers to questions regarding its content.
       </v-alert>
       <iframe
-        src="https://forms.office.com/Pages/ResponsePage.aspx?id=uoh7Kkbp8EueurjT0B43iCN69r2iEq1Ho-QzlAVcsV5URjJZR0pPQTYzVUpCOVBKRjA4QzRQR1VVSy4u"
+        src="https://form.jotform.com/231135723372046"
         width="100%"
         height="840px"
         style="border: 0"

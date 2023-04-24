@@ -148,67 +148,47 @@ export default {
           text: "About Us",
           icon: "mdi-information",
           route: "about",
-          routeTarget: "path",
         },
         {
           text: "News and Events",
           icon: "mdi-newspaper",
           route: "feed",
-          routeTarget: "name",
         },
         {
           text: "Report an Issue",
           icon: "mdi-alert",
           route: "report",
-          routeTarget: "name",
         },
         {
           text: "Agendas & Minutes",
           icon: "mdi-file-document",
-          href: "https://newbradwellpc-my.sharepoint.com/:f:/g/personal/dziegler_newbradwell-pc_gov_uk/EsddybRU9wBJme4X1HA8ykoBj2aSkxWVAFXgIqDDMv5ZtA?e=j9ZoV3",
+          href: "http://newbradwell-pc.gov.uk/meetings",
           hrefTarget: "_blank",
         },
         {
           text: "Policies, Guides and Docs",
           icon: "mdi-folder-text",
           route: "policies",
-          routeTarget: "name",
         },
-        {
-          text: "Newsletters",
-          icon: "mdi-email-newsletter",
-          route: "newsletters",
-          routeTarget: "name",
-        },
+        // {
+        //   text: "Newsletters",
+        //   icon: "mdi-email-newsletter",
+        //   route: "newsletters",
+        // },
         {
           text: "Allotments",
           icon: "mdi-flower",
           route: "allotments",
-          routeTarget: "name",
         },
-        // {
-        //   text: "Coronavirus",
-        //   icon: "mdi-virus",
-        //   route: "coronavirus",
-        //   routeTarget: "name",
-        // },
-        // {
-        //   text: "Platinum Jubilee",
-        //   icon: "mdi-party-popper",
-        //   route: "platinumjubilee",
-        //   routeTarget: "name",
-        // },
         {
           text: "Councillors",
           icon: "mdi-shield-account",
           route: "councillors",
-          routeTarget: "name",
         },
         {
           text: "Staff",
           icon: "mdi-badge-account",
           route: "staff",
-          routeTarget: "name",
         },
       ],
     };
@@ -259,7 +239,7 @@ export default {
       if ("href" in navItem) {
         this.externalLink(navItem.href, navItem.hrefTarget);
       }
-      this.$router.push((navItem.routeTarget = navItem.route));
+      this.$router.push({ name: navItem.route });
     },
     externalLink(href, target = "_blank") {
       console.debug(`externalLink: ${href} (${target})`);

@@ -128,7 +128,7 @@ export default {
         {
           title: "Grants Application Form (Online)",
           desc: "You can complete the Grant Application form online.",
-          link: "https://forms.office.com/Pages/ResponsePage.aspx?id=uoh7Kkbp8EueurjT0B43iCN69r2iEq1Ho-QzlAVcsV5URDZIOFBCMzNLV0xZVDdQUks4VTBMQUJSOS4u&fsw=0",
+          link: "https://form.jotform.com/231076623712047",
           format: "Form",
         },
         {
