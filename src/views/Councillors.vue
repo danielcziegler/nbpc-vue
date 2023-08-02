@@ -18,12 +18,8 @@
             <div class="text-h6 black--text">{{ person.name }}</div>
             {{ person.role }}<br />
             <span v-if="person.interests === null">&nbsp;</span>
-            <a
-              v-if="person.interests !== null"
-              style="color: #666666 !important; text-decoration: none"
-              :href="person.interests"
-              >Declaration of Interests</a
-            >
+            <!-- <a v-if="person.interests !== null" style="color: #666666 !important; text-decoration: none"
+              :href="person.interests">Declaration of Interests</a> -->
           </v-card-text>
         </v-card>
       </v-col>
@@ -89,9 +85,9 @@ export default {
           interests: "/docs/councillor-interests/jziegler.pdf",
         },
         {
-          name: "Tina Strutton",
+          name: "Daniel Ziegler",
           role: "Vice-Chair",
-          interests: "/docs/councillor-interests/tstrutton.pdf",
+          interests: "/docs/councillor-interests/dziegler.pdf",
         },
         {
           name: "Janette Chapman",
@@ -102,6 +98,11 @@ export default {
           name: "Nicola Coxon",
           role: "Parish Councillor",
           interests: "/docs/councillor-interests/ncoxon.pdf",
+        },
+        {
+          name: "Hannah Clawson (Vincent)",
+          role: "Parish Councillor",
+          interests: null,
         },
         {
           name: "Simon Clawson",
@@ -119,9 +120,9 @@ export default {
           interests: null,
         },
         {
-          name: "Daniel Ziegler",
+          name: "Tina Strutton",
           role: "Parish Councillor",
-          interests: "/docs/councillor-interests/dziegler.pdf",
+          interests: "/docs/councillor-interests/tstrutton.pdf",
         },
       ],
     };
