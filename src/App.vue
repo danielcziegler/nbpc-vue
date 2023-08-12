@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app>
+    <v-app v-if="true === false">
       <v-app-bar app flat :color="colors.appBar">
         <v-toolbar-title :class="colors.appBarToolbarTitle">{{
           activeMenuItem.text
@@ -253,7 +253,8 @@ export default {
     },
   },
   created() {
-    this.checkIncomingRoute();
+    this.externalLink("https://new-bradwell.lemonbooking.com/", "_self");
+    // this.checkIncomingRoute();
   },
 };
 </script>
